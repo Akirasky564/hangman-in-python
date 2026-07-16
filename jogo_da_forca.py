@@ -11,3 +11,12 @@ def processar_tentativa(letra, palavra_secreta, letras_acertadas):
         return True
     else:
         return False
+
+'''titulo do jogo'''
+print("Jogo da Forca\n") 
+
+palavra_secreta, letras_acertadas = inicializar_jogo()
+chances = 6 
+
+while True:
+    palavra_oculta = ""
