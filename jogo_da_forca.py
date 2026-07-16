@@ -33,3 +33,17 @@ print(f"\nPalavra atual: {palavra_oculta}")
   if "_" not in palavra_oculta:
         print("Parabéns! Você descobriu a palavra por completo!")
         break     
+
+letra_digitada = input("Digite uma letra: ").upper()   
+
+if acertou:
+        print("Parabéns! Você acertou a letra.")
+    else:
+        print("Ops! A letra digitada não faz parte da palavra.")
+        chances -= 1
+        
+if chances == 0:
+        print(
+            f"\nGame Over! Suas chances acabaram. A palavra era: {palavra_secreta}"
+        )
+        break         
